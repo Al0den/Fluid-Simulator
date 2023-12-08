@@ -1,0 +1,10 @@
+metal-cpp/*
+.vscode/*
+CMakeFiles/*
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+physics
+physics.ir
+shaders.metallib
