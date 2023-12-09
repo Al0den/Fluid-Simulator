@@ -106,8 +106,19 @@ void Display::drawParticles(Engine engine) {
     rect.w = SCREEN_WIDTH;
     rect.h = SCREEN_HEIGHT;
     SDL_RenderFillRect(this->renderer, &rect);
-    float max_speed = 8;
-    float min_speed = 15;
+    
+    float max_speed = 0;
+    float min_speed = 13
+    ;
+    for(int i=0; i<MAX_PARTICLES; i++) {
+        float speed = sqrt(particles[i].velocity_x * particles[i].velocity_x + particles[i].velocity_y * particles[i].velocity_y);
+        if (speed > max_speed) {
+            max_speed = speed;
+        }
+        if (speed < min_speed) {
+            min_speed = speed;
+        }
+    }
   
     for (int i = 0; i < MAX_PARTICLES; ++i) {
         // Calculate speed and normalize it between 0 and 1

@@ -11,6 +11,7 @@ void Engine::step() {
     encodeParticleUpdaterCommand(computeEncoder);
     encodeDensityUpdaterCommand(computeEncoder);
     encodeGradientCalculatorCommand(computeEncoder);
+    encodeViscosityCommand(computeEncoder);
 
     computeEncoder->endEncoding();
     commandBuffer->commit();
@@ -32,7 +33,7 @@ void Engine::ApplyExternalForce() {
         for (int i=0; i<MAX_PARTICLES; i++) {
             float distance = sqrt(pow(mouse_x - particles[i].x, 2) + pow(mouse_y - particles[i].y, 2));
             if (distance < 75) {
-                float force = (75 - distance) / 75 * 0.8;
+                float force = (75 - distance) / 75 * 0.3;
                 particles[i].velocity_x -= (mouse_x - particles[i].x) * force;
                 particles[i].velocity_y -= (mouse_y - particles[i].y) * force;
             }
@@ -42,7 +43,7 @@ void Engine::ApplyExternalForce() {
         for (int i=0; i<MAX_PARTICLES; i++) {
             float distance = sqrt(pow(mouse_x - particles[i].x, 2) + pow(mouse_y - particles[i].y, 2));
             if (distance < 75) {
-                float force = (75 - distance) / 75 * 0.8;
+                float force = (75 - distance) / 75 * 0.2;
                 particles[i].velocity_x += (mouse_x - particles[i].x) * force;
                 particles[i].velocity_y += (mouse_y - particles[i].y) * force;
             }

@@ -13,15 +13,17 @@ void Engine::init(MTL::Device *device) {
     auto density_str = NS::String::string("DensityMapUpdate", NS::ASCIIStringEncoding);
     auto gradient_str = NS::String::string("GradientMapUpdate", NS::ASCIIStringEncoding);
     auto density_coeff_str = NS::String::string("DensityCoeffInit", NS::ASCIIStringEncoding);
+    auto viscosity_str = NS::String::string("ViscosityForce", NS::ASCIIStringEncoding);
 
     MTL::Function *addFunction = defaultLibrary->newFunction(particle_str);
     MTL::Function *updateDensityMapFunction = defaultLibrary->newFunction(density_str);
     MTL::Function *calculateGradientFunction = defaultLibrary->newFunction(gradient_str);
     MTL::Function *densityCoeffStr = defaultLibrary->newFunction(density_coeff_str);
+    MTL::Function *viscosityFunction = defaultLibrary->newFunction(viscosity_str);
 
     defaultLibrary->release();
 
-    if (addFunction == nullptr || updateDensityMapFunction == nullptr || calculateGradientFunction == nullptr || densityCoeffStr == nullptr) {
+    if (addFunction == nullptr || updateDensityMapFunction == nullptr || calculateGradientFunction == nullptr || densityCoeffStr == nullptr || viscosityFunction == nullptr) {
         std::cout << "Failed to find one of the functions." << std::endl;
         return;
     }
@@ -31,13 +33,15 @@ void Engine::init(MTL::Device *device) {
     _mDensityMapUpdaterPSO = _mDevice->newComputePipelineState(updateDensityMapFunction, &error);
     _mGradientCalculatorPSO = _mDevice->newComputePipelineState(calculateGradientFunction, &error);
     _mDensityCoeffPSO = _mDevice->newComputePipelineState(densityCoeffStr, &error);
+    _mViscosityPSO = _mDevice->newComputePipelineState(viscosityFunction, &error);
     
     addFunction->release();
     updateDensityMapFunction->release();
     calculateGradientFunction->release();
     densityCoeffStr->release();
+    viscosityFunction->release();
 
-    if (_mAddFunctionPSO == nullptr || _mDensityMapUpdaterPSO == nullptr || _mGradientCalculatorPSO == nullptr || _mDensityCoeffPSO == nullptr) {
+    if (_mAddFunctionPSO == nullptr || _mDensityMapUpdaterPSO == nullptr || _mGradientCalculatorPSO == nullptr || _mDensityCoeffPSO == nullptr || _mViscosityPSO == nullptr) {
         std::cout << "Failed to created pipeline state object, error " << error
                   << "." << std::endl;
         return;

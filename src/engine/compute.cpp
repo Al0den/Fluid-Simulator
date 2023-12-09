@@ -75,3 +75,19 @@ void Engine::encodeDensityCoeffCommand(MTL::ComputeCommandEncoder *computeEncode
 
     computeEncoder->dispatchThreads(gridSize, threadgroupSize);
 }
+
+void Engine::encodeViscosityCommand(MTL::ComputeCommandEncoder *computeEncoder) {
+    computeEncoder->setComputePipelineState(_mViscosityPSO);
+    computeEncoder->setBuffer(particles, 0, 0);
+
+    MTL::Size gridSize = MTL::Size::Make(MAX_PARTICLES, 1, 1);
+
+    NS::UInteger threadGroupSize =
+        _mViscosityPSO->maxTotalThreadsPerThreadgroup();
+    if (threadGroupSize > MAX_PARTICLES) {
+        threadGroupSize = MAX_PARTICLES;
+    }
+    MTL::Size threadgroupSize = MTL::Size::Make(threadGroupSize, 1, 1);
+
+    computeEncoder->dispatchThreads(gridSize, threadgroupSize);
+}

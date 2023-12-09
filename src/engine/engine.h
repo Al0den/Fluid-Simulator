@@ -19,6 +19,7 @@ public:
     MTL::ComputePipelineState *_mDensityMapUpdaterPSO;
     MTL::ComputePipelineState *_mGradientCalculatorPSO;
     MTL::ComputePipelineState *_mDensityCoeffPSO;
+    MTL::ComputePipelineState *_mViscosityPSO;
  
     MTL::CommandQueue *_mCommandQueue;
 
@@ -35,6 +36,7 @@ public:
     void encodeDensityUpdaterCommand(MTL::ComputeCommandEncoder *computeCommandEncoder);
     void encodeGradientCalculatorCommand(MTL::ComputeCommandEncoder *computeCommandEncoder);
     void encodeDensityCoeffCommand(MTL::ComputeCommandEncoder *computeCommandEncoder);
+    void encodeViscosityCommand(MTL::ComputeCommandEncoder *computeCommandEncoder);
 
     void clear_density_map();
     void clear_gradient_buffers();
