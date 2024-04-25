@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-321c2e0e721f2ab284ef77edf64f7821 physics.ir
-14239ea8afa7b988da3c460eceb6f03f shaders.metallib
