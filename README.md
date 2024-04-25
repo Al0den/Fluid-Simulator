@@ -19,4 +19,11 @@ Currently, the only available controls are:
 
 All of them happen on the mouse
 
+All the settings can be found at `./src/settings.h`
+
 ## Screenshots
+
+![image](https://github.com/Al0den/Fluid-Simulator/assets/111601320/af0155f2-7a15-425d-b853-f7fe34cb80dc)
+The repel effect in motion
+![image](https://github.com/Al0den/Fluid-Simulator/assets/111601320/c4598031-4a1d-4f4d-8b50-c99759acb840)
+Idle State
