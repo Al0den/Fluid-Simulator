@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/alois/Desktop/projects/Fluid-Simulation",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/alois/Desktop/projects/Fluid-Simulation/src -I/opt/homebrew/Cellar/llvm/17.0.5/include/c++/v1 -I/opt/homebrew/opt/llvm/include -I/opt/homebrew/opt/sdl2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -isystem /Users/alois/Desktop/projects/Fluid-Simulation/metal-cpp -O2 -g -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/physics.dir/src/main.cpp.o -c /Users/alois/Desktop/projects/Fluid-Simulation/src/main.cpp",
+  "file": "/Users/alois/Desktop/projects/Fluid-Simulation/src/main.cpp",
+  "output": "CMakeFiles/physics.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/alois/Desktop/projects/Fluid-Simulation",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/alois/Desktop/projects/Fluid-Simulation/src -I/opt/homebrew/Cellar/llvm/17.0.5/include/c++/v1 -I/opt/homebrew/opt/llvm/include -I/opt/homebrew/opt/sdl2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -isystem /Users/alois/Desktop/projects/Fluid-Simulation/metal-cpp -O2 -g -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/physics.dir/src/engine/init.cpp.o -c /Users/alois/Desktop/projects/Fluid-Simulation/src/engine/init.cpp",
+  "file": "/Users/alois/Desktop/projects/Fluid-Simulation/src/engine/init.cpp",
+  "output": "CMakeFiles/physics.dir/src/engine/init.cpp.o"
+},
+{
+  "directory": "/Users/alois/Desktop/projects/Fluid-Simulation",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/alois/Desktop/projects/Fluid-Simulation/src -I/opt/homebrew/Cellar/llvm/17.0.5/include/c++/v1 -I/opt/homebrew/opt/llvm/include -I/opt/homebrew/opt/sdl2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -isystem /Users/alois/Desktop/projects/Fluid-Simulation/metal-cpp -O2 -g -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/physics.dir/src/engine/utils.cpp.o -c /Users/alois/Desktop/projects/Fluid-Simulation/src/engine/utils.cpp",
+  "file": "/Users/alois/Desktop/projects/Fluid-Simulation/src/engine/utils.cpp",
+  "output": "CMakeFiles/physics.dir/src/engine/utils.cpp.o"
+},
+{
+  "directory": "/Users/alois/Desktop/projects/Fluid-Simulation",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/alois/Desktop/projects/Fluid-Simulation/src -I/opt/homebrew/Cellar/llvm/17.0.5/include/c++/v1 -I/opt/homebrew/opt/llvm/include -I/opt/homebrew/opt/sdl2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -isystem /Users/alois/Desktop/projects/Fluid-Simulation/metal-cpp -O2 -g -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/physics.dir/src/engine/compute.cpp.o -c /Users/alois/Desktop/projects/Fluid-Simulation/src/engine/compute.cpp",
+  "file": "/Users/alois/Desktop/projects/Fluid-Simulation/src/engine/compute.cpp",
+  "output": "CMakeFiles/physics.dir/src/engine/compute.cpp.o"
+},
+{
+  "directory": "/Users/alois/Desktop/projects/Fluid-Simulation",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/alois/Desktop/projects/Fluid-Simulation/src -I/opt/homebrew/Cellar/llvm/17.0.5/include/c++/v1 -I/opt/homebrew/opt/llvm/include -I/opt/homebrew/opt/sdl2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -isystem /Users/alois/Desktop/projects/Fluid-Simulation/metal-cpp -O2 -g -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/physics.dir/src/engine/engine.cpp.o -c /Users/alois/Desktop/projects/Fluid-Simulation/src/engine/engine.cpp",
+  "file": "/Users/alois/Desktop/projects/Fluid-Simulation/src/engine/engine.cpp",
+  "output": "CMakeFiles/physics.dir/src/engine/engine.cpp.o"
+},
+{
+  "directory": "/Users/alois/Desktop/projects/Fluid-Simulation",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/alois/Desktop/projects/Fluid-Simulation/src -I/opt/homebrew/Cellar/llvm/17.0.5/include/c++/v1 -I/opt/homebrew/opt/llvm/include -I/opt/homebrew/opt/sdl2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -isystem /Users/alois/Desktop/projects/Fluid-Simulation/metal-cpp -O2 -g -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/physics.dir/src/objects/particle.cpp.o -c /Users/alois/Desktop/projects/Fluid-Simulation/src/objects/particle.cpp",
+  "file": "/Users/alois/Desktop/projects/Fluid-Simulation/src/objects/particle.cpp",
+  "output": "CMakeFiles/physics.dir/src/objects/particle.cpp.o"
+},
+{
+  "directory": "/Users/alois/Desktop/projects/Fluid-Simulation",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/alois/Desktop/projects/Fluid-Simulation/src -I/opt/homebrew/Cellar/llvm/17.0.5/include/c++/v1 -I/opt/homebrew/opt/llvm/include -I/opt/homebrew/opt/sdl2/include -F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk/System/Library/Frameworks -isystem /Users/alois/Desktop/projects/Fluid-Simulation/metal-cpp -O2 -g -DNDEBUG -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/physics.dir/src/render/display.cpp.o -c /Users/alois/Desktop/projects/Fluid-Simulation/src/render/display.cpp",
+  "file": "/Users/alois/Desktop/projects/Fluid-Simulation/src/render/display.cpp",
+  "output": "CMakeFiles/physics.dir/src/render/display.cpp.o"
+}
+]

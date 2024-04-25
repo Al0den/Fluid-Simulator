@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.27.7/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alois/Desktop/projects/physics
+CMAKE_SOURCE_DIR = /Users/alois/Desktop/projects/Fluid-Simulation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alois/Desktop/projects/physics
+CMAKE_BINARY_DIR = /Users/alois/Desktop/projects/Fluid-Simulation
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alois/Desktop/projects/physics/CMakeFiles /Users/alois/Desktop/projects/physics//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alois/Desktop/projects/Fluid-Simulation/CMakeFiles /Users/alois/Desktop/projects/Fluid-Simulation//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alois/Desktop/projects/physics/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alois/Desktop/projects/Fluid-Simulation/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,7 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /Users/alois/Desktop/projects/physics/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /Users/alois/Desktop/projects/Fluid-Simulation/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -339,7 +339,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/alois/Desktop/projects/physics/CMakeFiles/VerifyGlobs.cmake
+	$(CMAKE_COMMAND) -P /Users/alois/Desktop/projects/Fluid-Simulation/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
