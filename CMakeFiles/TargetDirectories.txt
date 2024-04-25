@@ -1,0 +1,3 @@
+/Users/alois/Desktop/projects/physics/CMakeFiles/physics.dir
+/Users/alois/Desktop/projects/physics/CMakeFiles/edit_cache.dir
+/Users/alois/Desktop/projects/physics/CMakeFiles/rebuild_cache.dir
