@@ -6,7 +6,7 @@ Far from achieving anything, it is more of a personal interest at physics simula
 
 ## How to run
 
-First, generate the Makefile using `cmake .`, and then `make .` to generate the executables. The Metal CPP files are already included inside `./src/Metal` and `./src/Foundation`
+First, generate the Makefile using `cmake . && make .` to generate the executables. The Metal CPP files are already included inside `./src/Metal` and `./src/Foundation`
 
 Then, simply run `./physics` to get inside the simulation
 
