@@ -36,9 +36,7 @@ Initial start distribution example
 </p>
 
 <p align="center">
-    <img src="https://github.com/Al0den/Fluid-Simulator/assets/111601320/af0155f2-7a15-425d-b853-f7fe34cb80dc">
+    <img src="https://github.com/Al0den/Fluid-Simulator/assets/111601320/233eea58-7640-4d65-8054-1a394ba2eaaf">
 </p>
-
-![image](https://github.com/Al0den/Fluid-Simulator/assets/111601320/233eea58-7640-4d65-8054-1a394ba2eaaf)
 
 
