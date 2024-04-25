@@ -24,9 +24,9 @@ All the settings can be found at `./src/settings.h`
 ## Screenshots
 
 <p align="center">
-  <img src="https://github.com/Al0den/Fluid-Simulator/assets/111601320/af0155f2-7a15-425d-b853-f7fe34cb80dc">
+The repel effect in motion
 </p>
 
 <p align="center">
-The repel effect in motion
+  <img src="https://github.com/Al0den/Fluid-Simulator/assets/111601320/af0155f2-7a15-425d-b853-f7fe34cb80dc">
 </p>
