@@ -30,9 +30,3 @@ All the settings can be found at `./src/settings.h`
 <p align="center">
 The repel effect in motion
 </p>
-
-![image](https://github.com/Al0den/Fluid-Simulator/assets/111601320/c4598031-4a1d-4f4d-8b50-c99759acb840)
-
-<p align="center">
-Idle State
-</p>
