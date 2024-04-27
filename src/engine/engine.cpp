@@ -1,4 +1,5 @@
 #include "engine.h"
+#include "settings.h"
 
 void Engine::step() {
     // Create a command buffer to hold commands.
@@ -26,6 +27,7 @@ void Engine::ApplyExternalForce() {
     bool space_down = SDL_GetKeyboardState(NULL)[SDL_SCANCODE_SPACE];
     bool shift_down = SDL_GetKeyboardState(NULL)[SDL_SCANCODE_LSHIFT];
     bool ctrl_down = SDL_GetKeyboardState(NULL)[SDL_SCANCODE_LCTRL];
+    bool right_shift_down = SDL_GetKeyboardState(NULL)[SDL_SCANCODE_RSHIFT];
     Particle *particles = (Particle*)this->particles->contents();
 
     if (shift_down) {
@@ -58,4 +60,18 @@ void Engine::ApplyExternalForce() {
             }
         }
     }
+
+    if(right_shift_down) {
+        for (int i=0; i<MAX_PARTICLES; i++) {
+            // Get distance from center of screen
+            float distance = sqrt(pow(float(WIDTH) / 2 - particles[i].x, 2) + pow(float(HEIGHT) / 2 - particles[i].y, 2));
+                // Apply coming from center, of strength cos(this->steps * 0.1), stronger if closer to center
+            float force = cos(this->steps * 0.1) * pow((float(WIDTH)/2 - distance) / WIDTH, 2) * 5;
+            float angle = atan2(particles[i].y - float(HEIGHT) / 2, particles[i].x - float(WIDTH) / 2);
+            particles[i].velocity_x += cos(angle) * force;
+            particles[i].velocity_y += sin(angle) * force;
+            
+        }
+    }
+
 }

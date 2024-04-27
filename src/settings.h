@@ -9,7 +9,7 @@
 
 #define GRAVITY 0
 
-#define STIFFNESS 0
+#define STIFFNESS 35
 #define REST_DENSITY 0.0013
 #define CLAMP_MULTIPLIER -0.1
 #define FRICTION_FACTOR 0.87
