@@ -55,8 +55,8 @@ void Engine::ApplyExternalForce() {
             float distance = sqrt(pow(mouse_x - particles[i].x, 2) + pow(mouse_y - particles[i].y, 2));
             float rand_float = (float)rand() / RAND_MAX;
             if(distance < 75) {
-                particles[i].x = 100 + rand() % 50 + rand_float;
-                particles[i].y = 100 + rand() % 50 + rand_float;
+                particles[i].x = WIDTH - 50 + rand() % 50 + rand_float;
+                particles[i].y = HEIGHT - 50 + rand() % 50 + rand_float;
             }
         }
     }

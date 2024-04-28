@@ -1,4 +1,4 @@
-# FLuid Simulation
+# Fluid Simulation
 
 This is a storing repository, for a test at making a particle based fluid simulation. It uses Apple's Metal API, and was only tested on Apple Silicon
 
